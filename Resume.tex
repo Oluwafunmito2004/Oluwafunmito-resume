@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Jake Gutierrez
+% Based on: https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that the generate PDF is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Oluwafunmito Adedeji} \\ \vspace{1pt}
+    \small No 4, Road 3, Line 1, Modomo, Ajebandele, Ile-Ife, Osun State, Nigeria $|$ 
+    \href{tel:+2349013669407}{\underline{+234 901 366 9407}} $|$ 
+    \href{mailto:adedejioluwafunmito2004@gmail.com}{\underline{adedejioluwafunmito2004@gmail.com}} $|$
+    \href{https://linkedin.com/in/oluwafunmito-adedeji-675b96305}{\underline{linkedin.com/in/oluwafunmito-adedeji}} $|$
+    \href{https://github.com/Oluwafunmito2004}{\underline{github.com/Oluwafunmito2004}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Obafemi Awolowo University}{Ile Ife, Osun State}
+      {Bachelor of Science in Electronics and Electrical Engineering}{Jan. 2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Electric Circuit Theory, Electronics and Electrical Materials, Computer Programming, Introduction to Computer Packages, Microelectronic Devices and Circuits, Computational Structures, Measurement and Instrumentation, Engineering Analysis, Electrical Machine}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SWEP Program}{Ile Ife, Osun State}
+      {Electronics and Electrical Engineering School Internship}{Aug. 2024 -- Sep. 2024}
+      \resumeItemListStart
+        \resumeItem{Designed and simulated custom PCB layouts for IoT and automation applications using Proteus}
+        \resumeItem{Created logic and control algorithms for microcontrollers (Arduino, ESP32) ensuring seamless hardware-software integration }
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Logic Module Development for Automated Systems}{Ile Ife, Osun State}
+      {Embedded Systems Developer}{Aug. 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Designed control logic for solar-powered automated lawn mower, optimizing motor control algorithms}
+        \resumeItem{Implemented geofencing techniques for precise navigation and mowing coverage}
+        \resumeItem{Designed logic for automated housing system, optimizing fan and shutter control for temperature control}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Solar Powered Automated Lawnmower} $|$ \emph{Proteus, Arduino}}{Aug. 2024}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented control systems for autonomous operation using microcontroller programming}
+            \resumeItem{Integrated solar charging system with power management for continuous operation}
+            \resumeItem{Developed navigation algorithms for efficient area coverage and obstacle avoidance}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Automated Housing Ventilation System} $|$ \emph{Arduino}}{Dec. 2024 -- Mar. 2025}
+          \resumeItemListStart
+            \resumeItem{Led a team in designing and developing an automated temperature control system for residential spaces}
+            \resumeItem{Implemented sensor integration with Arduino Nano for real-time temperature-based fan and shutter control}
+            \resumeItem{Collaborated on PCB layout design for reliable signal transmission between components}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, HTML/CSS} \\
+     \textbf{Developer Tools}{: VS Code, Arduino, MatLab, Labview, LTSpice} \\
+     \textbf{Technologies/Frameworks}{: Linux, GitHub, Proteus} \\
+     \textbf{Hardware}{: Microcontrollers (Arduino, ESP32), PCB Design}
+    }}
+ \end{itemize}
+
+%-----------LEADERSHIP-----------
+\section{Leadership \& Extracurricular}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {NACOS OAU [Innofest 1.0]}{Ile Ife, Osun State}
+      {Head of Partnership}{Oct. 2024 -- Feb. 2025}
+      \resumeItemListStart
+        \resumeItem{Spearheaded strategic collaborations and secured key partnerships for technology innovation festival}
+        \resumeItem{Negotiated sponsorships to support event objectives}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Union of Genius (UOG)}{Ile Ife, Osun State}
+      {Head of Web Development Team}{Jun. 2021 -- Present}
+      \resumeItemListStart
+        \resumeItem{Led team in developing and maintaining the organization's web presence}
+        \resumeItem{Coordinated with other departments to implement technical solutions for organizational needs}
+        \resumeItem{Visited secondary school to teach students the basics of web development (HTML/CSS)}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Automated Housing Ventilation System Project}{Obafemi Awolowo University}
+      {Team Lead}{Dec. 2024 -- Mar. 2025}
+      \resumeItemListStart
+        \resumeItem{Led the team to conceptualize, organize, and execute the development of a home ventilation automation solution}
+        \resumeItem{Coordinated team efforts, project planning, and final presentation during academic showcase}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
